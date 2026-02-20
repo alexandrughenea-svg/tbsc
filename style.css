@@ -1,0 +1,236 @@
+/* =========================
+   BASE GENERALE
+========================= */
+
+body {
+  background-color: #f8f5f2;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #7b1e3a;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  background-color: #7b1e3a;
+  padding: 15px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.logo-text {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #c49a6c;
+}
+
+nav a.active {
+  border-bottom: 2px solid #c49a6c;
+  padding-bottom: 4px;
+}
+
+
+/* =========================
+   SECTIONS GENERALES
+========================= */
+
+section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+section h2 {
+  color: #7b1e3a;
+  margin-bottom: 10px;
+}
+
+section p {
+  line-height: 1.6;
+}
+
+section {
+  margin-bottom: 40px;
+  }
+
+/* =========================
+   PAGE ACCUEIL
+========================= */
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #7b1e3a;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.cta-btn:hover {
+  background-color: #c49a6c;
+}
+
+.mission {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.features,
+.cta-section {
+  text-align: center;
+}
+
+.tagline {
+  font-size: 20px;
+  font-weight: 600;
+  color: #7b1e3a;
+  margin-bottom: 15px;
+}
+
+.mini-slogan {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #c49a6c;
+  margin-bottom: 10px;
+}
+
+.feature-grid {
+  display: grid;
+  gap: 25px;
+  margin-top: 30px;
+  grid-template-columns: repeat(2,1fr);
+  text-align: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature-card {
+  background-color: #f0ece9;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+
+/* =========================
+   REGIONS
+========================= */
+
+.region-list {
+  margin-top: 20px;
+}
+
+.region-list button {
+  padding: 10px 15px;
+  margin-right: 10px;
+  border-radius: 6px;
+  border: none;
+  background-color: #7b1e3a;
+  color: white;
+  cursor: pointer;
+}
+
+.region-list button.active {
+  background-color: #c49a6c;
+}
+
+.region-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.region-card h3 {
+  margin-top: 15px;
+  color: #7b1e3a;
+}
+
+
+/* =========================
+   UTILITAIRES
+========================= */
+
+.hidden {
+  display: none;
+}
+
+.fade {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.4s ease;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
